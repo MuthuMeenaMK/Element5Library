@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>789,476</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>901,2447</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ExportData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
@@ -55,7 +55,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="74">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="37">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -93,16 +93,15 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.OmniPage.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="476,411" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="911,2382" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,319" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="869,2290" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -110,60 +109,93 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="ExportData" sap:VirtualizedContainerService.HintSize="831,1639" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="ExportData" sap:VirtualizedContainerService.HintSize="831,2041" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="789,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Execution-Export data started&quot;]" />
-          <p:CVScope ContinueOnError="{x:Null}" ApiKey="eyAu+nQwz/yn23JXWlQdbc5trAsHGJYDU67nE9U22/uNkw7yfjzQ7uxclt2GFysL3gmnuScbg7Gzj0MoM1yq6Q==" CvMethod="ElementDetection, OCR" DelayBefore="5000" DesignTimeCacheId="91cb08ad-5e90-44dc-a251-2bd555bf206b" DisplayName="CV Screen Scope 'wfica32.exe clientRelat...'" sap:VirtualizedContainerService.HintSize="789,487" sap2010:WorkflowViewState.IdRef="CVScope_2" Server="https://cv.uipath.com" Version="V2">
+          <p:CVScope ContinueOnError="{x:Null}" ApiKey="eyAu+nQwz/yn23JXWlQdbc5trAsHGJYDU67nE9U22/uNkw7yfjzQ7uxclt2GFysL3gmnuScbg7Gzj0MoM1yq6Q==" CvMethod="ElementDetection, OCR" DelayBefore="5000" DesignTimeCacheId="91cb08ad-5e90-44dc-a251-2bd555bf206b" DisplayName="CV Screen Scope 'wfica32.exe clientRelat...'" sap:VirtualizedContainerService.HintSize="789,889" sap2010:WorkflowViewState.IdRef="CVScope_2" Server="https://cv.uipath.com" Version="V2">
             <p:CVScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                 </ActivityAction.Argument>
                 <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <p:CvClickWithDescriptor DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" CursorMotionType="Smooth" DelayBefore="5000" DesignTimeCacheId="91cb08ad-5e90-44dc-a251-2bd555bf206b" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,136" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_2" InRegion="[RegionExportData]" InformativeScreenshot="9a1f1a72a91409f3efed73a4efd5ff2d" KeyModifiers="None" MouseButton="BTN_LEFT" Version="V2">
-                    <p:CvClickWithDescriptor.CursorPosition>
-                      <ui:CursorPosition Position="Center">
-                        <ui:CursorPosition.OffsetX>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetX>
-                        <ui:CursorPosition.OffsetY>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetY>
-                      </ui:CursorPosition>
-                    </p:CvClickWithDescriptor.CursorPosition>
-                    <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="ExportGrid" />
+                  </Sequence.Variables>
+                  <p:CvElementExistsWithDescriptor DesignTimeCacheId="91cb08ad-5e90-44dc-a251-2bd555bf206b" DesignTimeScaleFactor="1" DisplayName="CV Element Exists - Text" sap:VirtualizedContainerService.HintSize="755,136" sap2010:WorkflowViewState.IdRef="CvElementExistsWithDescriptor_2" InRegion="[RegionExportData]" InformativeScreenshot="63a00c69fd9214cc2193c1229eff2f52" Result="[ExportGrid]" Version="V2">
+                    <p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
                       <uc:CvDescriptor>
                         <uc:CvDescriptor.Anchors>
                           <x:Array Type="uc:CvElementDescriptor">
                             <uc:CvElementDescriptor DesignTimeArea="7, 164, 13, 18" ElementType="Text" Text="1‘" />
+                            <uc:CvElementDescriptor DesignTimeArea="7, 189, 14, 13" ElementType="Text" Text=":23" />
                           </x:Array>
                         </uc:CvDescriptor.Anchors>
                         <uc:CvDescriptor.Target>
                           <uc:CvElementDescriptor DesignTimeArea="34, 168, 64, 13" ElementType="Text" Text="Export Grid" />
                         </uc:CvDescriptor.Target>
                       </uc:CvDescriptor>
-                    </p:CvClickWithDescriptor.DesignTimeDescriptor>
-                    <p:CvClickWithDescriptor.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="1837cf07-8db8-46cb-94fb-00b3958f7d8f">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </p:CvClickWithDescriptor.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </p:CvClickWithDescriptor>
+                    </p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
+                  </p:CvElementExistsWithDescriptor>
+                  <If Condition="[ExportGrid]" sap:VirtualizedContainerService.HintSize="755,402" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <p:CvClickWithDescriptor DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" CursorMotionType="Smooth" DelayBefore="5000" DesignTimeCacheId="91cb08ad-5e90-44dc-a251-2bd555bf206b" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_2" InRegion="[RegionExportData]" InformativeScreenshot="9a1f1a72a91409f3efed73a4efd5ff2d" KeyModifiers="None" MouseButton="BTN_LEFT" Version="V2">
+                        <p:CvClickWithDescriptor.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </p:CvClickWithDescriptor.CursorPosition>
+                        <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                          <uc:CvDescriptor>
+                            <uc:CvDescriptor.Anchors>
+                              <x:Array Type="uc:CvElementDescriptor">
+                                <uc:CvElementDescriptor DesignTimeArea="7, 164, 13, 18" ElementType="Text" Text="1‘" />
+                              </x:Array>
+                            </uc:CvDescriptor.Anchors>
+                            <uc:CvDescriptor.Target>
+                              <uc:CvElementDescriptor DesignTimeArea="34, 168, 64, 13" ElementType="Text" Text="Export Grid" />
+                            </uc:CvDescriptor.Target>
+                          </uc:CvDescriptor>
+                        </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <p:CvClickWithDescriptor.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="1837cf07-8db8-46cb-94fb-00b3958f7d8f">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </p:CvClickWithDescriptor.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:CvClickWithDescriptor>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Export Data element not found&quot;]" />
+                        <Throw Exception="[new BusinessRuleException(&quot;Workflow Export Data failed&quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
                 </Sequence>
               </ActivityAction>
             </p:CVScope.Body>
@@ -477,10 +509,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,135" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="835,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -488,7 +520,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -500,7 +532,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="835,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

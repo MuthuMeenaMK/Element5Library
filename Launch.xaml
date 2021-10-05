@@ -14,7 +14,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>789,445</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1042,1430</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Launch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
@@ -78,10 +78,9 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.OmniPage.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="476,380" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="1052,1365" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="LoginPage" />
     </Sequence.Variables>
@@ -90,9 +89,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1010,1273" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence DisplayName="Launch" sap:VirtualizedContainerService.HintSize="972,1115" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="Launch" sap:VirtualizedContainerService.HintSize="972,1024" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="IsValidURL" />
           </Sequence.Variables>
@@ -104,7 +103,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="930,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Execution - Opening Portal&quot;]" />
           <ui:IsMatch BuilderPattern="(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.]*\)|[-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.])*(?:\([-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.]*\)|[a-zA-Z0-9+&amp;@#\/%=~_|$])" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="930,59" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[URL]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;URL&quot;,&quot;OperationName&quot;:&quot;URL&quot;,&quot;OperationValue&quot;:&quot;(?:(?:https?|ftp|file):\\\/\\\/|www\\.|ftp\\.)(?:\\([-a-zA-Z0-9+&amp;@#\\\/%=~_|$?!:,.]*\\)|[-a-zA-Z0-9+&amp;@#\\\/%=~_|$?!:,.])*(?:\\([-a-zA-Z0-9+&amp;@#\\\/%=~_|$?!:,.]*\\)|[a-zA-Z0-9+&amp;@#\\\/%=~_|$])&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.]*\)|[-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.])*(?:\([-a-zA-Z0-9+&amp;@#\/%=~_|$?!:,.]*\)|[a-zA-Z0-9+&amp;@#\/%=~_|$])" RegexOption="IgnoreCase" Result="[IsValidURL]" />
-          <If Condition="[IsValidURL]" sap:VirtualizedContainerService.HintSize="930,793" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[IsValidURL]" sap:VirtualizedContainerService.HintSize="930,702" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -112,20 +111,20 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="509,635" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence sap:VirtualizedContainerService.HintSize="509,544" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:OpenBrowser CommunicationMethod="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="467,543" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[HCHBWebPage]" Url="[URL]">
+                <ui:OpenBrowser CommunicationMethod="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="467,452" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[HCHBWebPage]" Url="[URL]">
                   <ui:OpenBrowser.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,442" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,351" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,35 +140,6 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:ImageFound DisplayName="Image Exists 'chrome.exe Homecare'" Found="[LoginPage]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
-                                <ui:ImageFound.Image>
-                                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
-                                </ui:ImageFound.Image>
-                                <ui:ImageFound.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="591ad97d-f2d4-4ac7-95c7-2a6be450c830" TimeoutMS="60000">
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:ImageFound.Target>
-                              </ui:ImageFound>
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:CommentOut>
                         <If Condition="[LoginPage]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -220,7 +190,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="976,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -231,7 +201,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -243,10 +213,10 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="400,104" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="976,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
