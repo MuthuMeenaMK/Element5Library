@@ -3,7 +3,6 @@
   "description": "Blank Library",
   "main": "NewActivity.xaml",
   "dependencies": {
-    "Alphabet.Workflow.Activities": "3.2.0",
     "UiPath.Excel.Activities": "2.10.4",
     "UiPath.Mail.Activities": "1.10.5",
     "UiPath.OmniPage.Activities": "1.7.1",
@@ -14,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.4.0",
-  "projectVersion": "1.0.144",
+  "projectVersion": "1.0.157",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
